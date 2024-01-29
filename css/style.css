@@ -1,0 +1,106 @@
+.gradient-background {
+  background: linear-gradient(to top right, #fd267a, #ff6036);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.head-text{
+  font-size: 40px;
+  color: #ffffff;
+}
+.dog-img{
+  height: 500px;
+}
+
+.login-btn{
+  display: inline-block;
+  outline: 0;
+  border:0;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: #757070;
+  background: #fff;
+  line-height: 30px;
+  border-radius: 40px;
+  font-size: 15px;
+  padding: 0 20px;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 2px;
+  transition: all 0.2s;
+}
+.login-btn:hover{
+  color: #fff;
+  background-color: rgb(255, 198, 0);
+}
+
+.signin-btn{
+  padding: 0 20px;
+  font-size: 15px;
+  transition: 0.5s;
+  line-height: 30px;
+  background-size: 200% auto;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 2px;
+  color: white;
+  border-radius: 40px;
+  border: 0px;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.signin-btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.signin-btn:active {
+  transform: scale(0.95);
+}
+
+.text-end button{
+  margin: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .hero{
+    padding-bottom: 25px;
+  }
+  .hero img{
+    height: auto;
+    width: 100%;
+  }
+  .hero>div{
+    width: 100%;
+  }
+  .login-btn,.signin-btn{
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
